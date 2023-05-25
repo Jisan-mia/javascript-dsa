@@ -45,3 +45,20 @@ function exampleFunction3(arr1, arr2) {
 
  
 // 4. Drop non Dominants
+function printAndPairSum(array) {
+  console.log('Logging all the array item')
+  for(let i =0; i < array.length; i++) {
+    console.log(array[i])
+  }
+
+  console.log('Pair sum')
+  for(let j = 0; j < array.length; j++) {
+    for(k = 0; k < array.length; k++) {
+      console.log(array[j] + array[k])
+    }
+  }
+}
+printAndPairSum([1,2,3,4,5])
+// whats the time complexity or big O, lets calculate
+// O(n+n^2)
+// O(n^2) here we dropped the non-dominants or insignificant one because when program scales these wont matter
