@@ -6,6 +6,8 @@
 
 // a singly linked lists contains a set of nodes, each nodes have 2 elements
 // one is the value we want to store and the second is a pointer that is pointing to the next node
+    // example
+    // node = {value: 5, next: pointer-to-next}
 // the first node is called "head" and the last node is called "tail"
 // linked lists are null terminated
 // when a nodes points to null that means that nodes is the tail node
