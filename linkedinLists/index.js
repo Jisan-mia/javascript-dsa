@@ -11,3 +11,17 @@
 // the first node is called "head" and the last node is called "tail"
 // linked lists are null terminated
 // when a nodes points to null that means that nodes is the tail node
+
+
+/* 
+Pros:
+- Fast insertion
+- Fast deletion
+- ordered
+- flexible size
+
+Cons:
+- Slow Mockup
+- More memory
+
+*/
