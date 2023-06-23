@@ -5,7 +5,7 @@
 // 0, 1, 1, 2, 3, 5, 8, 13, 21, 34 ....
 // the pattern of teh sequence is that each value is the sum  of the previous 2 values, that means for N=5 --> 3+2
 
-function fibonacciIterative(n) {
+function fibonacciIterative(n) { // O(n)
   const arr = [0,1]
   for(let i = 2; i <= n; i++) {
     arr.push(arr[i-2]+arr[i-1])
@@ -15,7 +15,7 @@ function fibonacciIterative(n) {
 
 console.log('iterative: ', fibonacciIterative(8))
 
-function fibonacciRecursive(n)  {
+function fibonacciRecursive(n)  { // O(2^n)
   if(n < 2) {
     return n
   }
