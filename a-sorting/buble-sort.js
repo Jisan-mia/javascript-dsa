@@ -1,6 +1,6 @@
 const numbers = [99, 44, 9, 2, 1, 5, 63, 87, 283, 4, 0]
 
-function bubbleSort(arr) { // O(n^2)
+function selectionSort(arr) { // O(n^2)
   const len =  arr.length;
   for(let i = 0; i < len; i++) {
     for(let j = 0; j < len; j++) {
@@ -14,4 +14,4 @@ function bubbleSort(arr) { // O(n^2)
   return arr;
 }
 
-console.log(bubbleSort(numbers))
+console.log(selectionSort(numbers))
