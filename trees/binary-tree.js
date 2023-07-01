@@ -171,7 +171,13 @@ bst.insert(4);
 bst.insert(6);
 bst.insert(1);
 bst.remove(170)
-console.log('lookup/isItExist =', bst.lookup(20))
+// console.log('lookup/isItExist =', bst.lookup(20))
 
 
-console.log(bst)
+// console.log(bst)
+
+
+
+module.exports = {
+  BinarySearchTree,
+};
