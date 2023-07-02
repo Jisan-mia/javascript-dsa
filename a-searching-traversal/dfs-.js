@@ -30,7 +30,6 @@ function traverseInOrder(node, list) {
   return list;
 } 
 
-
 function traversePreOrder(node, list) {
   list.push(node.value);
 
@@ -40,6 +39,20 @@ function traversePreOrder(node, list) {
   if (node.right) {
     traversePreOrder(node.right, list);
   }
+
+  return list;
+} 
+
+
+function traversePostOrder(node, list) {
+
+  if (node.left) {
+    traversePostOrder(node.left, list);
+  }
+  if (node.right) {
+    traversePostOrder(node.right, list);
+  }
+  list.push(node.value);
 
   return list;
 } 
@@ -61,3 +74,4 @@ console.log(myBST)
 
 console.log(myBST.DFSInOrder());
 console.log(myBST.DFSPreOrder())
+console.log(myBST.DFSPostOrder());
