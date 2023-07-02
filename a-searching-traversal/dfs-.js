@@ -9,12 +9,12 @@ BinarySearchTree.prototype.DFSInOrder = function() {
   return traverseInOrder(this.root, [])
 }
 
-BinarySearchTree.prototype.DFSPreOrder = function() {
-  return traversePreOrder(this.root, []);
-}
-
 BinarySearchTree.prototype.DFSPostOrder = function() {
   return traversePostOrder(this.root, []);
+}
+
+BinarySearchTree.prototype.DFSPreOrder = function() {
+  return traversePreOrder(this.root, []);
 }
 
 
@@ -30,6 +30,19 @@ function traverseInOrder(node, list) {
   return list;
 } 
 
+
+function traversePreOrder(node, list) {
+  list.push(node.value);
+
+  if (node.left) {
+    traversePreOrder(node.left, list);
+  }
+  if (node.right) {
+    traversePreOrder(node.right, list);
+  }
+
+  return list;
+} 
 /* 
       9
   4       20
@@ -47,3 +60,4 @@ myBST.insert(1);
 console.log(myBST)
 
 console.log(myBST.DFSInOrder());
+console.log(myBST.DFSPreOrder())
